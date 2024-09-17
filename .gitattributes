@@ -1,1 +1,1 @@
-linguist-language=Kotlin
+*.roff linguist-detectable=false
