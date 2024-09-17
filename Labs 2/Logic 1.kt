@@ -3,7 +3,7 @@ fun main() {
     val B = false
     val C = false
 
-    println("а) А или В: ${if (A || B) "Истина" else "Ложь"}")
-    println("б) А и В: ${if (A && B) "Истина" else "Ложь"}")
-    println("в) В или С: ${if (B || C) "Истина" else "Ложь"}")
+    println("а) А или В: ${(A || B)}")
+    println("б) А и В: ${(A && B)}")
+    println("в) В или С: ${(B || C)}")
 }
