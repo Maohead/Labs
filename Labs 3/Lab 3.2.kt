@@ -5,11 +5,25 @@ fun main() {
     val b = readLine()!!.toInt()
     print("Третье: ")
     val c = readLine()!!.toInt()
-    val sred = (a + b + c) / 3
-    if (a == b || a == c || b == c) {
-        println("Ошибка")
+
+    if (a == b || b == c || a == c) {
+        println("Ошибка! Одинаковые числа.")
     }
-    else {
-        println("Среднее число: $sred")
+
+    else
+    {
+        var mid = if (a > b && a < c || a > c && a < b)
+        {
+            a
+        }
+        else if (b > a && b < c || b > c && b < a)
+        {
+            b
+        }
+        else
+        {
+            c
+        }
+        println("Среднее число: $mid")
     }
 }
