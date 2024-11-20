@@ -105,7 +105,6 @@ private fun evalPostfix(postfixTokens: List<String>): Double {
     return stack.pop()
 }
 
-// Пример использования
 fun main() {
     print("Введите уравнение: ")
     val expression = readln().toString()
